@@ -320,11 +320,11 @@ class RunBuy extends Command {
                                         break;
 									case "fitness":
 										$search = $this->fut->searchAuctions(
-											'training',
+											'player',
 											null,
 											'fitness',
 											null,
-                                            null,
+                                            5002006,
                                             null,
                                             $formattedBid,
                                             null,
@@ -335,7 +335,7 @@ class RunBuy extends Command {
                                             null,
                                             null,
                                             null,
-                                            $player->fitness_rel->fitness_id,
+                                            null,
                                             0,
                                             21
 										);
@@ -393,8 +393,10 @@ class RunBuy extends Command {
 
         } catch(FutError $exception) {
 
+			throw $exception;
+		
             $error = $exception->GetOptions();
-
+			
             if($error['reason'] !== 'permission_denied') {
                 $this->account->update([
                     'phishingToken' => null,
