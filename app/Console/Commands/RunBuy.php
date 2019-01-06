@@ -320,7 +320,7 @@ class RunBuy extends Command {
                                         break;
 									case "fitness":
 										$search = $this->fut->searchAuctions(
-											'player',
+											'development',
 											null,
 											'fitness',
 											null,
