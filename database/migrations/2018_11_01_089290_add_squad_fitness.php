@@ -8,7 +8,9 @@ class AddSquadFitness extends Migration
 {
     protected $fitness_squad = [
 	
-		220 => "Gold-Squad"
+		5002004	=> "Bronze Fitness Squad"
+		5002005	=> "Silver Fitness Squad"
+		5002006 => "Gold Fitness Squad"
         
     ];
     

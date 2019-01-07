@@ -324,7 +324,7 @@ class RunBuy extends Command {
 											null,
 											'fitness',
 											null,
-                                            5002006,
+                                            $player->fitness_rel->fitness_id,
                                             null,
                                             $formattedBid,
                                             null,
