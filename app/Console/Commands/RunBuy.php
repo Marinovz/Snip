@@ -392,8 +392,6 @@ class RunBuy extends Command {
             }
 
         } catch(FutError $exception) {
-
-			throw $exception;
 		
             $error = $exception->GetOptions();
 			
