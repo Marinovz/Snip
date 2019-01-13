@@ -89,7 +89,7 @@ class RunBuy extends Command {
             'in_use' => '0'
         ]);
         $this->account = Accounts::where('status', '1')->where('in_use', '0')->whereNotNull('phishingToken')->first();
-		var_dump/print_r/echo
+		var_dump/print_r/echo;
         if(!$this->account) {
             abort(403);
         }
@@ -152,7 +152,7 @@ class RunBuy extends Command {
                 ]);
 			}
 			else {
-				var_dump/print_r/echo
+				var_dump/print_r/echo;
 			}
             
 
