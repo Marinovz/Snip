@@ -7,6 +7,9 @@ if [ -f composer-setup.php ]; then
     php -r "unlink('composer-setup.php');"
 fi
 
+#Update APT
+sudo apt-get update
+
 #Install cURL
 sudo apt-get install -y php7.2-curl
 
