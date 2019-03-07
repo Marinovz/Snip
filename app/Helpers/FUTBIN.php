@@ -84,8 +84,8 @@ class FUTBIN {
             $proxy = $this->getProxy();
         }
         try {
-            $response = $this->client->request('POST', 'futbin/api/fetchPlayerInformation', [
-                'form_params' => [
+            $response = $this->client->request('GET', 'futbin/api/fetchPlayerInformation', [
+                'query' => [
                     'ID' => $id,
                     'platform' => $this->console
                 ],
